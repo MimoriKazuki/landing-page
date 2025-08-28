@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(npx supabase:*)",
+      "Bash(echo:*)",
+      "Bash(rm:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(npm run dev:*)",
+      "Bash(node:*)",
+      "Bash(cat:*)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(chmod:*)",
+      "Bash(cp:*)",
+      "Bash(claude \"テスト: Desktopディレクトリからのプロンプトが保存されるか確認\")",
+      "Bash(git commit:*)",
+      "Bash(source:*)",
+      "Bash(SUPABASE_SERVICE_ROLE_KEY=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBqYWxqamtjb3ZkcmFrdW5weHVnIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MzI2NDE1MywiZXhwIjoyMDY4ODQwMTUzfQ.JXIhb2iYs-8bJ_fPhFzV_k3fBJA5K1NCSDOoF5tkAJI\" node check_tamogami.js)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(npm run build:*)",
+      "Bash(git config:*)",
+      "Bash(git reset:*)",
+      "Bash(curl:*)",
+      "Bash(SUPABASE_SERVICE_ROLE_KEY=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBqYWxqamtjb3ZkcmFrdW5weHVnIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MzI2NDE1MywiZXhwIjoyMDY4ODQwMTUzfQ.JXIhb2iYs-8bJ_fPhFzV_k3fBJA5K1NCSDOoF5tkAJI\" node scripts/check_last_login.js)",
+      "Bash(npm i:*)",
+      "Bash(sed:*)",
+      "Bash(git checkout:*)",
+      "Bash(npx vercel:*)",
+      "Bash(git log:*)",
+      "Bash(ls:*)",
+      "Bash(./setup-cms-connection.sh:*)",
+      "Bash(npx supabase db push:*)",
+      "Bash(npx create-next-app:*)",
+      "Bash(npx --yes create-next-app@latest vibe-coding-lp --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --eslint --turbopack)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(grep:*)",
+      "Bash(npx tsx:*)",
+      "Bash(npx --yes create-next-app@latest ai-media-automation --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --eslint --turbopack)",
+      "Read(//var/folders/h2/bp8c5ty547qbq7vb6ng8jgy40000gq/T/TemporaryItems/NSIRD_screencaptureui_5HYflM/**)",
+      "Read(//var/folders/h2/bp8c5ty547qbq7vb6ng8jgy40000gq/T/TemporaryItems/NSIRD_screencaptureui_0jzP4l/**)",
+      "Read(//var/folders/h2/bp8c5ty547qbq7vb6ng8jgy40000gq/T/TemporaryItems/NSIRD_screencaptureui_SnPdHh/**)",
+      "Read(//var/folders/h2/bp8c5ty547qbq7vb6ng8jgy40000gq/T/TemporaryItems/NSIRD_screencaptureui_y1KXrz/**)",
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --eslint)"
+    ],
+    "deny": []
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/mimoriikki/post_prompt.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
